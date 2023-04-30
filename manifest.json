@@ -1,0 +1,11 @@
+{
+    "name":"Ipl Extension",
+    "version":"1.0.0",
+    "description":"Extension to know about ongoing ipl games",
+    "manifest_version":3,
+    "author":"Vanshul Dahiya",
+    "action":{
+        "default_popup":"index.html",
+        "default_title":"Ipl Game Extension"
+    }
+}

@@ -1,0 +1,9 @@
+body{
+    min-width: 400px;
+}
+ul {
+    font-family: cursive;
+}
+li{
+    color:darkcyan;
+}
