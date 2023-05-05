@@ -18,7 +18,7 @@ async function getMatchData() {
         .map(
           (match) =>
             `${match.name} , ${match.status}, \n ` +
-            "\n" +
+            "\n ScoreCard -> " +
             match.score[0].inning +
             " , \n" +
             match.score[0].r +
@@ -26,6 +26,15 @@ async function getMatchData() {
             match.score[0].w +
             " , over - \t" +
             match.score[0].o +
+            " \n" +
+            " , \n" +
+            match.score[1].inning +
+            " , \n" +
+            match.score[1].r +
+            " / \n" +
+            match.score[1].w +
+            " , over - \t" +
+            match.score[1].o +
             " \n"
         );
 
