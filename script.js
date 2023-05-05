@@ -15,14 +15,19 @@ async function getMatchData() {
         .filter(
           (match) => match.series_id == "c75f8952-74d4-416f-b7b4-7da4b4e3ae6e"
         )
-        .map((match) => `${match.name} , ${match.status} `);
-
-      // get score
-      // const score = matchesList
-      //   .filter(
-      //     (match) => match.series_id == "c75f8952-74d4-416f-b7b4-7da4b4e3ae6e"
-      //   )
-      //   .map((match) => `${match.score } , ${match.score[1]} `);
+        .map(
+          (match) =>
+            `${match.name} , ${match.status}, \n ` +
+            "\n" +
+            match.score[0].inning +
+            " , \n" +
+            match.score[0].r +
+            " / \n" +
+            match.score[0].w +
+            " , over - \t" +
+            match.score[0].o +
+            " \n"
+        );
 
       // display generic info
       document.getElementById("matches").innerHTML = relevantData
